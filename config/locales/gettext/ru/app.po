@@ -57,7 +57,7 @@ msgstr "Это отправление уже истекло."
 #: ../../../app/views/passwords/audit.html.erb:188
 #: ../../../app/views/urls/audit.html.erb:84
 #: ../../../app/views/urls/audit.html.erb:170
-msgid "The push content has been deleted and the secret URL expired."
+msgid "The note has been deleted and the secret URL expired."
 msgstr "Содержимое отправления было удалено, а срок действия секретного URL истек."
 
 #: ../../../app/controllers/urls_controller.rb:155

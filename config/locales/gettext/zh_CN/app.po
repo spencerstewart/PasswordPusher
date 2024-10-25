@@ -54,7 +54,7 @@ msgstr "该推送已经过期。"
 #: ../../../app/views/passwords/audit.html.erb:188
 #: ../../../app/views/urls/audit.html.erb:84
 #: ../../../app/views/urls/audit.html.erb:170
-msgid "The push content has been deleted and the secret URL expired."
+msgid "The note has been deleted and the secret URL expired."
 msgstr "推送内容已被删除，密文网址已过期。"
 
 #: ../../../app/controllers/urls_controller.rb:155

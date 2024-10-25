@@ -56,7 +56,7 @@ msgstr "การผลักดันนั้นหมดอายุแล้
 #: ../../../app/views/passwords/audit.html.erb:188
 #: ../../../app/views/urls/audit.html.erb:84
 #: ../../../app/views/urls/audit.html.erb:170
-msgid "The push content has been deleted and the secret URL expired."
+msgid "The note has been deleted and the secret URL expired."
 msgstr "เนื้อหาพุชถูกลบและ URL ลับหมดอายุ"
 
 #: ../../../app/controllers/urls_controller.rb:155
