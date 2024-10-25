@@ -26,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/pwpush
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/pwpush
 
       - name: Login to DockerHub
         if: github.event_name != 'pull_request'
@@ -44,3 +44,6 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache' || '' }}
+          cache-to: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == "false"}}' || '' }}
+
