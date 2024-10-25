@@ -45,7 +45,14 @@
             </div>
         </div>
     </div>
-    <div class='row'>
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-link my-3" style="float: right" data-toggle="collapse" href="#advancedSettings" role="button" aria-expanded="false" aria-controls="advancedSettings">
+                Advanced
+            </a>
+        </div>
+    </div>
+    <div class='row collapse' id="advancedSettings">
         <div class='col-12 col-sm-8 p-3'>
             <div class='row'>
                 <div><%= _('Expire secret link and delete after:') %></div>
@@ -171,7 +178,7 @@
     </div>
     <div class='row'>
         <div class='col'>
-            <p class='my-3'>
+            <p class='my-1'>
                 <button class="form-control btn btn-primary" type="submit" data-form-target="pushit" data-disable-with="Pushing..."><%= _('Push It!') %></button>
             </p>
         </div>
