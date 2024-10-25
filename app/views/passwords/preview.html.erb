@@ -1,9 +1,9 @@
-<% title(_('Your Password has been Pushed')) %>
+<% title(_('Your GhostNote has been created')) %>
 
 <div class="container h-75">
     <div class="d-flex flex-column justify-content-center align-items-center">
 
-      <h2 class='mt-5'><%= _('Your push has been created.') %></h2>
+      <h2 class='mt-5'><%= _('Your GhostNote has been created.') %></h2>
 
       <p class='mt-5'><%= _('Use this secret link to share it:') %></p>
       <%= render partial: 'application/secret_url_bar' %>
@@ -53,7 +53,7 @@
       </div>
 
       <p class='my-5 text-center'>
-        <%= _('This newly pushed password will expire after') %>
+        <%= _('This new GhostNote will expire after') %>
         <strong><%= @push.expire_after_days %> <%= n_('day', 'days', @push.expire_after_days) %></strong>
         <%= _('or') %>
         <strong><%= @push.expire_after_views %> <%= n_('view', 'views', @push.expire_after_views) %></strong>
@@ -71,8 +71,8 @@
       <% end %>
 
       <p class='mb-5'>
-        <%= link_to _('View This Password Now'), @secret_url, "data-turbo-prefetch": false %> <%= _('(will burn a view) or') %>
-        <%= link_to _('Push Another Password'), new_password_path %>
+        <%= link_to _('View This GhostNote Now'), @secret_url, "data-turbo-prefetch": false %> <%= _('(will burn a view) or') %>
+        <%= link_to _('Create Another GhostNote'), new_password_path %>
       </p>
 
       <% if user_signed_in? %>
