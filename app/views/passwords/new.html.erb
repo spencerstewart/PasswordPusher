@@ -100,7 +100,7 @@
                         <% if Settings.pw.enable_retrieval_step %>
                             <label class="list-group-item d-flex gap-2">
                             <%= check_box_tag "password[retrieval_step]", nil, Settings.pw.retrieval_step_default,
-                                            { class: 'form-check-input flex-shrink-0',
+                                            { class: 'form-check-input flex-shrink-0 px-2',
                                               "data-knobs-target" => "retrievalStepCheckbox" } %>
                             <span>
                                 <%= _('Use a 1-click retrieval step') %>
@@ -111,7 +111,7 @@
                         <% if Settings.pw.enable_deletable_pushes %>
                             <label class="list-group-item d-flex gap-2">
                             <%= check_box_tag "password[deletable_by_viewer]", nil, Settings.pw.deletable_pushes_default,
-                                            { class: 'form-check-input flex-shrink-0',
+                                            { class: 'form-check-input flex-shrink-0 px-2',
                                               "data-knobs-target" => "deletableByViewerCheckbox" } %>
                             <span>
                                 <%= _('Allow immediate deletion') %>
