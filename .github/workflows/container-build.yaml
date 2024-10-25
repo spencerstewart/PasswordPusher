@@ -44,6 +44,6 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == 'false'}}
+          cache-from: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache' || '' }}
+          cache-to: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == "false"}}' || '' }}
 
