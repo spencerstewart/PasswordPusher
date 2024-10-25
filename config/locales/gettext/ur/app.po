@@ -56,7 +56,7 @@ msgstr "وہ دھکا پہلے ہی ختم ہوچکا ہے۔"
 #: ../../../app/views/passwords/audit.html.erb:188
 #: ../../../app/views/urls/audit.html.erb:84
 #: ../../../app/views/urls/audit.html.erb:170
-msgid "The push content has been deleted and the secret URL expired."
+msgid "The note has been deleted and the secret URL expired."
 msgstr "پش مواد کو حذف کر دیا گیا ہے اور خفیہ URL کی میعاد ختم ہو گئی ہے۔"
 
 #: ../../../app/controllers/urls_controller.rb:155

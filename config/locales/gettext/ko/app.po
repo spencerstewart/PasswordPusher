@@ -54,7 +54,7 @@ msgstr "해당 푸시는 이미 만료되었습니다."
 #: ../../../app/views/passwords/audit.html.erb:188
 #: ../../../app/views/urls/audit.html.erb:84
 #: ../../../app/views/urls/audit.html.erb:170
-msgid "The push content has been deleted and the secret URL expired."
+msgid "The note has been deleted and the secret URL expired."
 msgstr "푸시 콘텐츠가 삭제되었으며 비밀 URL이 만료되었습니다."
 
 #: ../../../app/controllers/urls_controller.rb:155

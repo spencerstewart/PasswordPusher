@@ -1001,7 +1001,7 @@ en-GB:
       start_audit_log: Start of Audit Log
       state: State
       state_help_active: Active and still available for viewing.
-      state_help_expired: The push content has been deleted and the secret URL expired.
+      state_help_expired: The note has been deleted and the secret URL expired.
       successful_views: Successful Views
       successful_views_help: The number of times the push has been successfully viewed.
       time_remaining: Time Remaining
@@ -1016,7 +1016,7 @@ en-GB:
       or <strong>%{count} more views</strong>, whichever occurs first.
     expire:
       already_expired: That push has already expired.
-      expired: The push content has been deleted and the secret URL expired.
+      expired: The note has been deleted and the secret URL expired.
       not_deletable: That push is not deletable by viewers.
     form:
       12_hours: 12 Hours

@@ -299,7 +299,7 @@ class UrlsController < BaseController
     respond_to do |format|
       if @push.save
         format.html do
-          redirect_to @push, notice: _("The push content has been deleted and the secret URL expired.")
+          redirect_to @push, notice: _("The note has been deleted and the secret URL expired.")
         end
         format.json { render json: @push, status: :ok }
       else

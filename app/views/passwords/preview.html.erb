@@ -3,7 +3,7 @@
 <div class="container h-75">
     <div class="d-flex flex-column justify-content-center align-items-center">
 
-      <h2 class='mt-5'><%= _('Your GhostNote has been created.') %></h2>
+      <h2 class='mt-5'><%= _('Your note has been created.') %></h2>
 
       <p class='mt-5'><%= _('Use this secret link to share it:') %></p>
       <%= render partial: 'application/secret_url_bar' %>
@@ -71,8 +71,8 @@
       <% end %>
 
       <p class='mb-5'>
-        <%= link_to _('View This GhostNote Now'), @secret_url, "data-turbo-prefetch": false %> <%= _('(will burn a view) or') %>
-        <%= link_to _('Create Another GhostNote'), new_password_path %>
+        <%= link_to _('View this note now'), @secret_url, "data-turbo-prefetch": false %> <%= _('(will burn a view) or') %>
+        <%= link_to _('Create another note'), new_password_path %>.
       </p>
 
       <% if user_signed_in? %>

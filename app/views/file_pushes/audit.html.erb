@@ -94,7 +94,7 @@
                     <%= _('State:') %>
                     <% if @push.expired %>
                         <strong class='text-danger'><%= _('Expired') %></strong>
-                        <small class="d-block text-muted"><%= _('The push content has been deleted and the secret URL expired.') %></small>
+                        <small class="d-block text-muted"><%= _('The note has been deleted and the secret URL expired.') %></small>
                     <% else %>
                         <strong class='text-success'><%= _('Active') %></strong>
                         <small class="d-block text-muted"><%= _('Active and still available for viewing.') %></small>
@@ -251,7 +251,7 @@
                                 <%= I18n.l view.created_at.in_time_zone(Settings.timezone) %>
                             <% end %>
                             <br>
-                            <%= _('The push content has been deleted and the secret URL expired.') %>
+                            <%= _('The note has been deleted and the secret URL expired.') %>
                             <br>
                             <%= _('User Agent') %>: <code><%= view.user_agent %></code>
                             <br>
