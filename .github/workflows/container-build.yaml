@@ -3,8 +3,8 @@ name: Docker Container Build
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
 
 # env:
 #   IMAGE_NAME: ${{ github.repository }}
@@ -41,9 +41,9 @@ jobs:
           file: ./containers/docker/Dockerfile
           platforms: linux/amd64,linux/arm64
           context: .
-          push: ${{ github.event_name != 'pull_request' }}
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache' || '' }}
-          cache-to: ${{ github.event_name != 'pull_request' && 'type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == "false"}}' || '' }}
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/pwpush:buildcache,mode=max,ignore-error=${{env.DOCKER_PUSH == 'false'}}
 
